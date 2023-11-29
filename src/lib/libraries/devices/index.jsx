@@ -2,6 +2,7 @@ import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import defaultsDeep from 'lodash.defaultsdeep';
 import log from '../../log';
+//import {DeviceType} from '../../device';
 
 import arduinoBaseToolBox from './baseToolbox/arduino';
 
@@ -15,9 +16,9 @@ import arduinoUnoIconURL from './arduinoUno/arduinoUno.png';
 import arduinoUnoConnectionIconURL from './arduinoUno/arduinoUno-illustration.svg';
 import arduinoUnoConnectionSmallIconURL from './arduinoUno/arduinoUno-small.svg';
 
-import arduinoNanoIconURL from './arduinoNano/arduinoNano.png';
-import arduinoNanoConnectionIconURL from './arduinoNano/arduinoNano-illustration.svg';
-import arduinoNanoConnectionSmallIconURL from './arduinoNano/arduinoNano-small.svg';
+import arduinoNanoIconURL from './esp32/esp32.png';
+import arduinoNanoConnectionIconURL from './esp32/esp32-illustration.svg';
+import arduinoNanoConnectionSmallIconURL from './esp32/esp32-small.svg';
 
 import esp32IconURL from './esp32/esp32.png';
 import esp32ConnectionIconURL from './esp32/esp32-illustration.svg';
@@ -171,16 +172,16 @@ const deviceData = [
         helpLink: 'https://store.arduino.cc/usa/arduino-uno-rev3'
     },
     {
-        name: 'Arduino Nano',
+        name: 'ESP32 DEV KIT V1',
         deviceId: 'arduinoNano',
-        manufactor: 'arduino.cc',
+        manufactor: 'Espresssif',
         leanMore: 'https://store.arduino.cc/usa/arduino-nano',
         type: 'arduino',
         boardType: 'Nano',
         iconURL: arduinoNanoIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="The Arduino Nano is a classic small board to build your projects with."
+                defaultMessage="Wi-Fi & Bluetooth control board with rich functions."
                 description="Description for the Arduino Nano device"
                 id="gui.device.arduinoNano.description"
             />
@@ -189,7 +190,7 @@ const deviceData = [
         disabled: false,
         bluetoothRequired: false,
         serialportRequired: true,
-        defaultBaudRate: '9600',
+        defaultBaudRate: '115200',
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
@@ -213,6 +214,7 @@ const deviceData = [
         deviceId: 'arduinoEsp32',
         manufactor: 'espressif',
         leanMore: 'https://www.espressif.com/',
+//        type: DeviceType.arduino,
         type: 'arduino',
         iconURL: esp32IconURL,
         description: (
@@ -240,8 +242,9 @@ const deviceData = [
             />
         ),
         baseToolBoxXml: arduinoBaseToolBox,
-        programMode: ['upload'],
-        programLanguage: ['block', 'python'],
+        programMode: ['realtime', 'upload'],
+   //     programLanguage: ['block', 'python'],
+        programLanguage: ['block', 'c', 'cpp'],
         tags: ['arduino'],
         helpLink: 'https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/hw-reference/esp32/get-started-devkitc.html'
     },

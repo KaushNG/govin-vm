@@ -29,7 +29,7 @@ const CardHeader = ({onCloseCards, onShrinkExpandCards, onShowAll, totalSteps, s
                 src={helpIcon}
             />
             <FormattedMessage
-                defaultMessage="Tutorials"
+                defaultMessage="utorials"
                 description="Title for button to return to tutorials library"
                 id="gui.cards.all-tutorials"
             />

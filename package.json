@@ -26,6 +26,7 @@
         "url": "git+ssh://git@github.com/ottawastem/scratch-arduino-gui.git"
     },
     "dependencies": {
+        "@abandonware/bluetooth-hci-socket": "^0.5.3-10",
         "@ramonak/react-progress-bar": "^3.1.0",
         "ansi-to-react": "^6.0.8",
         "arraybuffer-loader": "^1.0.6",
