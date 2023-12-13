@@ -61,7 +61,7 @@ const AccountNavComponent = ({
             onRequestClose={onClose}
         >
             {/* <MenuItemContainer href={profileUrl}> */}
-            <MenuItemContainer href='https://ottawastem.com/accounts/profile/me/'>
+            <MenuItemContainer href='https://cares.goa.gov.in/'>
                 <FormattedMessage
                     defaultMessage="My Profile"
                     description="Text to link to my user profile, in the account navigation menu"

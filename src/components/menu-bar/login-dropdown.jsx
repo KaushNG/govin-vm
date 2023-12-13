@@ -123,7 +123,7 @@ const LoginDropdown = ({
                     </div> 
                     <div
                         className={classNames(styles.signupButton)}
-                        onClick={event =>  window.location.href='https://ottawastem.com/accounts/signup/'}
+                        onClick={event =>  window.location.href='https://cares.goa.gov.in/prerna/login/index.php'}
                         tabIndex='0'
                     >
                         {LoginDropdownMessages.signup.defaultMessage}
