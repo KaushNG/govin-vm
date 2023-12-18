@@ -40,7 +40,7 @@ const HardwareComponent = props => {
                 </button>
                 <CodeEditor
                     width={(stageSizeMode === STAGE_SIZE_MODES.large) ? 480 : 240}
-                  //  value={codeEditorValue}
+                    value={codeEditorValue}
                     language={codeEditorLanguage}
                     editorWillMount={onCodeEditorWillMount}
                     editorDidMount={onCodeEditorDidMount}
@@ -60,7 +60,6 @@ const HardwareComponent = props => {
         </Box>
     );
 };
-
 
 HardwareComponent.propTypes = {
     codeEditorLanguage: PropTypes.string,

@@ -14,6 +14,10 @@ import smallStageIcon from './icon--small-stage.svg';
 import hideStageIcon from './icon--hide-stage.svg';
 import uploadIcon from './icon--upload.svg';
 
+// Changes done on 14 dec to add maxmimise button
+
+// import maximiseIcon from './max.svg';
+
 const messages = defineMessages({
     uploadMessage: {
         defaultMessage: 'Upload',

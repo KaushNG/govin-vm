@@ -12,7 +12,7 @@ const onClickLinkLogo = () => {
 };
 
 const onClickLogo = () => {
-    window.open('https://ottawastem.com', '_blank'); 
+    window.open('https://cares.goa.gov.in/', '_blank'); 
 };
 
 const onClickCheckUpdate = () => {
